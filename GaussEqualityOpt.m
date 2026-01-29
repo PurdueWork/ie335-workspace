@@ -94,7 +94,11 @@ if any(reducedCosts < -TOL)
     %--------------------------------------------------------
     % TODO: 1-5 Lines of code, find the direction which increases the objective value to +infty and set it to v
     %--------------------------------------------------------
-    
+    for k = 1:length(basicIdx)
+        row = pivotRows(k);
+        coeff = constraintRows(row, f + 1); % shift to matrix column index
+        v(basicIdx(k)) = -coeff;
+    end
     %--------------------------------------------------------
     optVal = Inf;
     dirs = v;
@@ -118,6 +122,7 @@ for j = 1:numNonbasic
     end
     dirs(:, j) = v;
 end
+
 end
 
 % ------------------------------------------------------------------------

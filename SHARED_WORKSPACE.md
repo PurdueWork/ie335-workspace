@@ -54,10 +54,18 @@ Coordinate with teammates to avoid editing the same files at the same time when 
 
 To work in the **same Cursor session** with someone in real time:
 
-1. Open this folder in Cursor.
-2. **View → Command Palette** (or `Ctrl+Shift+P`).
-3. Run **"Live Share: Start Collaboration Session"**.
-4. Share the link with your partner. They join and you can edit together.
+1. **Install the Live Share extension** (if you don’t see the command):
+   - Press `Ctrl+Shift+X` to open Extensions.
+   - Search for **Live Share** and install the one by **Microsoft** (ms-vsliveshare).
+   - Reload Cursor if prompted.
+
+2. **Start a session:**
+   - Press `Ctrl+Shift+P` to open the Command Palette.
+   - Type **live share** or **start collaboration**.
+   - Run **"Live Share: Start Collaboration Session"** (or **"Live Share: Share"**).
+   - Or use the **Live Share** button in the bottom status bar (after installing).
+
+3. **Share the link** with your partner. They open it in a browser or Cursor and join.
 
 Live Share is for **live pairing**. Git is for **async collaboration** and **history** — use both as needed.
 

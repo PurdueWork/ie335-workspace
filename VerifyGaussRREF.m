@@ -18,7 +18,7 @@ TOL = 1e-10;
 % ----------------------------- Test Matrices -----------------------------
 % 1. Random matrices of various sizes
 rng(42); % For reproducibility
-randomTests = arrayfun(@(~) randn(randi([2,6]), randi([2,6])), 1:5, 'UniformOutput', false);
+randomTests = arrayfun(@(~) randn(randi([2,6]), randi([2,6])), 1:5, 'UniformOutput', false); %Commented  xhj
 
 % 2. Singular matrix
 singularTest = {[1 2 3; 2 4 6; 3 6 9]};

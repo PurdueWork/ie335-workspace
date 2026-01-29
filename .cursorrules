@@ -1,0 +1,7 @@
+# IE 335 Shared Session Workspace
+
+- This project is a **shared workspace** for IE 335. Multiple collaborators and devices use it via Git.
+- **Before editing:** run `git pull origin main` to get latest changes.
+- **After editing:** run `git add .`, `git commit -m "message"`, `git push origin main` to share.
+- Primary language: **MATLAB** (.m files). Follow existing style in Gauss*, Verify*, HW0.
+- See `SHARED_WORKSPACE.md` for full collaboration and Live Share instructions.

@@ -1,0 +1,25 @@
+# MATLAB
+*.asv
+*.m~
+*.autosave
+*.mex*
+slprj/
+sccprj/
+codegen/
+octave-workspace
+*.mlappinstall
+*.mltbx
+helpsearch*/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+*.swp
+*.swo
+*~
+
+# Cursor
+.cursor/

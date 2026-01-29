@@ -50,6 +50,40 @@ Coordinate with teammates to avoid editing the same files at the same time when 
 
 ---
 
+## Commit message instructions
+
+When you run `git commit` without `-m "message"`, Git opens **COMMIT_EDITMSG** in your editor.
+
+### How to use the editor
+
+| Do this | Result |
+|--------|--------|
+| **Line 1** | Write your commit message here. This is the only line Git uses unless you add more. |
+| **Lines starting with `#`** | Ignored by Git (comments). Don’t delete them if you don’t need to. |
+| **Save the file** | `Ctrl+S` |
+| **Close the tab** | Completes the commit. In Cursor/VS Code, saving and closing the COMMIT_EDITMSG tab finishes the commit. |
+| **Empty first line** | If line 1 is empty, Git aborts the commit (no commit is made). |
+
+### Good commit message tips
+
+- **Short summary:** Use the first line as a brief summary (e.g. `Fix GaussRREF edge case`, `Add VerifyGaussEqualityOpt`).
+- **Optional body:** Add a blank line, then more lines if you need to explain why or what changed.
+- **Present tense:** Prefer “Add feature” over “Added feature”.
+
+### Example
+
+```
+Fix VerifyGaussRREF for singular matrices
+
+Handle case when pivot is zero; add warning message.
+```
+
+### Aborting the commit
+
+To cancel: close the file without putting any message on line 1, or delete the only non-comment line and save. Git will say “Aborting commit due to empty commit message.”
+
+---
+
 ## Cursor Live Share (real-time pair programming)
 
 To work in the **same Cursor session** with someone in real time:

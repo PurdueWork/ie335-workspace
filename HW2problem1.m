@@ -1,7 +1,5 @@
 clear; clc
 
-% Decision variables: x = [x1; x2]
-% Minimize: x1 + x2
 f = [1; 1];
 
 % Constraints are of the form A*x <= b for linprog.
